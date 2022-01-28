@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vicent:group *
+chown -H vicent:group *
