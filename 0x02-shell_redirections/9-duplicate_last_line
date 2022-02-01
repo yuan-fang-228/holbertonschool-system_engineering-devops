@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "\n%b" "$(tail -n1 iacta)" >> iacta
+printf "\n%b\n" "$(tail -n1 iacta)" >> iacta
