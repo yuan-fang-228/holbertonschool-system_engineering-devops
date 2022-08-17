@@ -6,3 +6,4 @@ sudo service nginx start
 sudo chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
 sudo chmod -R 755 /var/www
 sudo echo "Hello World" > /var/www/html/index.nginx-debian.html
+sudo rm /var/www/html/index.html
