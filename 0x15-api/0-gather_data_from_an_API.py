@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Return information about the TODO list progress for a given employee ID"""
-import urllib
 import requests
 import sys
+import urllib
 
 
 if __name__ == "__main__":
