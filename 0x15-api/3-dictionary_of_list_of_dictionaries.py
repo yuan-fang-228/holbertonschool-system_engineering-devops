@@ -12,11 +12,11 @@ if __name__ == "__main__":
     dic = {}
     with open("todo_all_employees.json", "w") as alljsonfile:
         for user in users:
-            todos = requests.get(url + "/users/{}/todos/".format(user.get("id"))).json()
-            username = user.get("username")
             userId = user.get("id")
+            todo = requests.get(url + "/users/{}/todos/".format(userId)).json()
+            username = user.get("username")
             tasks = []
-            for task in todos:
+            for task in todo:
                 task_dic = {}
                 task_dic["task"] = task.get("title")
                 task_dic["completed"] = task.get("completed")
